@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400&family=Poppins:wght@300;500&display=swap');
+
+:root {
+    --blush: #dbb2a1;
+    --cream: #fcf8ef;
+    --dk-brown: #4e3f41;
+    --mountain: #a39296;
+}
+
+body {
+    background-color: var(--cream);
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 24px;
+    letter-spacing: 1px;
+    line-height: 2;
+    color: var(--dk-brown);
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: "Lora", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    margin-bottom: 1em;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+h2 {
+    font-size: 1.5em;
+}
+
+h3 {
+    font-size: 1.2em;
+}
+
+strong {
+    font-weight: 500;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+small {
+    font-size: 0.7em;
+}
+
+.container {
+    max-width: 1200px;
+}
+
+.grid-col-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1em;
+}
+
+.grid-col-3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1em;
+}
+
+.blush-bg {
+    background: var(--blush);
+    color: var(--dk-brown);
+}
+
+.mountain-bg {
+    background: var(--mountain);
+    color: #333;
+}
+
+.dark-bg {
+    background: var(--dk-brown);
+    color: var(--cream);
+}
+
+.lora {
+    font-family: "Lora", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.navbar {
+    background: var(--cream);
+    font-size: 0.9em;
+}
+
+.navbar-brand {
+    max-width: 300px;
+}
+
+.nav-link {
+    margin: 0 1em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.masthead {
+    height: 75vh;
+    background-image: url('images/pexels-monstera-production-6621181.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.masthead-sub {
+    height: 25vh;
+    background-image: url('images/pexels-monstera-production-6621181.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.masthead .container,
+.masthead-sub .container {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    background-color: rgba(219, 178, 161, 0.6);
+    text-align: center;
+    height: 100%;
+}
+
+.masthead .container .content,
+.masthead-sub .container .content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    margin: 0;
+    padding: 0;
+}
+
+main a {
+    color: var(--dk-brown);
+    text-decoration: none;
+    border-bottom: 2px solid var(--mountain);
+    font-weight: bold;
+}
+
+main a:hover {
+    color: var(--mountain);
+}
+
+section {
+    padding: 5em;
+}
+
+.masonry {
+    column-count: 4;
+    column-gap: 1em;
+}
+
+.masonry img {
+    display: inline-block;
+    margin: 0 0 1em;
+    width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+    .masonry {
+        column-count: 1;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .masonry {
+        column-count: 2;
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1200px) {
+    .masonry {
+        column-count: 3;
+    }
+}
+
+
+footer {
+    font-size: 0.8em;
+    text-align: center;
+    padding: 5em;
+    color: var(--dk-brown);
+}
+
+footer a {
+    color: var(--mountain)
+}
