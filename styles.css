@@ -18,6 +18,12 @@ body {
     color: var(--dk-brown);
 }
 
+@media screen and (max-width: 1024px) {
+    body {
+        font-size: 20px;
+    }
+}
+
 h1,
 h2,
 h3,
@@ -54,6 +60,10 @@ small {
     font-size: 0.7em;
 }
 
+.w-10 {
+    width: 10% !important;
+}
+
 .container {
     max-width: 1200px;
 }
@@ -68,6 +78,14 @@ small {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 1em;
+}
+
+@media screen and (max-width: 1024px) {
+
+    .grid-col-2,
+    .grid-col-3 {
+        grid-template-columns: auto;
+    }
 }
 
 .blush-bg {
@@ -101,6 +119,12 @@ small {
     max-width: 300px;
 }
 
+@media screen and (max-width: 1024px) {
+    .navbar-brand {
+        max-width: 200px;
+    }
+}
+
 .nav-link {
     margin: 0 1em;
     text-transform: uppercase;
@@ -113,6 +137,12 @@ small {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 1024px) {
+    .masthead {
+        height: 100vh;
+    }
 }
 
 .masthead-sub {
@@ -143,6 +173,20 @@ small {
     padding: 0;
 }
 
+@media screen and (max-width: 1024px) {
+    .masthead .container .content{
+        left: 0;
+        right: 0;
+        transform: translateX(0%) translateY(-50%);
+        padding: 1em;
+    }
+    .masthead-sub .container .content {
+        left: 0;
+        right: 0;
+        transform: translateX(0%) translateY(-50%);
+    }
+}
+
 main a {
     color: var(--dk-brown);
     text-decoration: none;
@@ -156,6 +200,18 @@ main a:hover {
 
 section {
     padding: 5em;
+}
+
+@media screen and (max-width: 1024px) {
+    section {
+        padding: 1em;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .card {
+        padding: 1em !important;
+    }
 }
 
 .masonry {
@@ -195,6 +251,16 @@ footer {
     color: var(--dk-brown);
 }
 
+@media screen and (max-width: 1024px) {
+    footer {
+        padding: 3em 1em 0em;
+    }
+}
+
 footer a {
     color: var(--mountain)
+}
+
+.footer-logo {
+    max-width: 300px;
 }
