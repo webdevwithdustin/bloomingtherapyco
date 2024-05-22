@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400&family=Poppins:wght@300;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap');
 
 :root {
     --blush: #dbb2a1;
@@ -28,9 +28,9 @@ h1,
 h2,
 h3,
 h4 {
-    font-family: "Lora", serif;
+    font-family: "Poppins", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 400;
+    font-weight: 600;
     font-style: normal;
     margin-bottom: 1em;
 }
@@ -48,7 +48,7 @@ h3 {
 }
 
 strong {
-    font-weight: 500;
+    font-weight: 600;
 }
 
 img {
@@ -61,7 +61,7 @@ small {
 }
 
 .w-10 {
-    width: 10% !important;
+    width: 50px !important;
 }
 
 .container {
@@ -103,16 +103,10 @@ small {
     color: var(--cream);
 }
 
-.lora {
-    font-family: "Lora", serif;
-    font-optical-sizing: auto;
-    font-weight: 600;
-    font-style: normal;
-}
 
 .navbar {
     background: var(--cream);
-    font-size: 0.9em;
+    font-size: 0.8em;
 }
 
 .navbar-brand {
@@ -131,23 +125,9 @@ small {
     letter-spacing: 1px;
 }
 
-.masthead {
-    height: 75vh;
-    background-image: url('images/pexels-monstera-production-6621181.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-@media screen and (max-width: 1024px) {
-    .masthead {
-        height: 100vh;
-    }
-}
-
+.masthead,
 .masthead-sub {
-    height: 25vh;
-    background-image: url('images/pexels-monstera-production-6621181.jpg');
+    background-image: url('images/image5.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -165,25 +145,14 @@ small {
 
 .masthead .container .content,
 .masthead-sub .container .content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translateX(-50%) translateY(-50%);
-    margin: 0;
-    padding: 0;
+    padding: 5em 10em;
 }
 
 @media screen and (max-width: 1024px) {
-    .masthead .container .content{
-        left: 0;
-        right: 0;
-        transform: translateX(0%) translateY(-50%);
-        padding: 1em;
-    }
+
+    .masthead .container .content,
     .masthead-sub .container .content {
-        left: 0;
-        right: 0;
-        transform: translateX(0%) translateY(-50%);
+        padding: 1em 1em;
     }
 }
 
