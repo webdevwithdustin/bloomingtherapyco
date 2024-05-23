@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@500&family=Poppins:wght@300;600&display=swap');
 
 :root {
     --blush: #dbb2a1;
@@ -28,9 +28,9 @@ h1,
 h2,
 h3,
 h4 {
-    font-family: "Poppins", sans-serif;
+    font-family: "Lora", serif;
     font-optical-sizing: auto;
-    font-weight: 600;
+    font-weight: 500;
     font-style: normal;
     margin-bottom: 1em;
 }
@@ -48,7 +48,9 @@ h3 {
 }
 
 strong {
+    font-family: "Poppins", sans-serif;
     font-weight: 600;
+    font-style: normal;
 }
 
 img {
@@ -127,10 +129,7 @@ small {
 
 .masthead,
 .masthead-sub {
-    background-image: url('images/image5.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    background-color: var(--blush);
 }
 
 .masthead .container,
